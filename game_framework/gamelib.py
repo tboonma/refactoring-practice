@@ -149,7 +149,6 @@ class GameApp(ttk.Frame):
     def add_element(self, element: GameCanvasElement):
         """Add an element to the game."""
         self.elements.append(element)
-        # TODO should we add it to the canvas also?
 
     def remove_element(self, element: GameCanvasElement):
         """Remove an element from the game."""
