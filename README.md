@@ -11,6 +11,7 @@ Each subdirectory contains some code that needs refactoring.
 ## `time/timestamp.py`
 
 Refactor timestamp.py.  2 or 3 refactorings are possible.
+- renamed function `createTimeFromTimestamp` to `create_time_from_timestamp` to match with PEP8 styles.
 
 
 ## `game_framework/gamelib.py`
