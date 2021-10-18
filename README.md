@@ -25,6 +25,8 @@ Look for refactorings in the class `GameApp`.
 * Encapsulate a collection - provide behavior that subclasses of GameApp need instead of requiring them to manipulate a collection that belongs to the GameApp class.
   - Hint: `elements`
 
+- Make `self.photo_image` to be inline.
+
 ## `recipe/recipe.py` and `recipe/main.py`
 
 This uses a `dataclass`, which requires Python 3.7.

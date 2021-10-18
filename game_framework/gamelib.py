@@ -1,7 +1,8 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 
-class GameCanvasElement():
+
+class GameCanvasElement:
     """Base class for an element on the game canvas, with attributes:
 
     x = x-coordinate of object's image
@@ -15,6 +16,7 @@ class GameCanvasElement():
     """
 
     def __init__(self, game_app, x=0, y=0):
+        self.canvas_object_id = None
         self.x = x
         self.y = y
         self.canvas = game_app.canvas
@@ -68,11 +70,10 @@ class Sprite(GameCanvasElement):
         super().__init__(game_app, x, y)
 
     def init_canvas_object(self):
-        self.photo_image = tk.PhotoImage(file=self.image_filename)
         self.canvas_object_id = self.canvas.create_image(
             self.x, 
             self.y,
-            image=self.photo_image)
+            image=tk.PhotoImage(file=self.image_filename))
 
 
 class GameApp(ttk.Frame): 
